@@ -13,6 +13,7 @@ GEM
       httparty (~> 0.15.5)
       nokogiri (~> 1.7.0)
       rubyzip (>= 1.0.0)
+    fastsheet (0.1.0)
     httparty (0.15.6)
       multi_xml (>= 0.5.2)
     i18n (0.8.6)
@@ -61,6 +62,7 @@ PLATFORMS
 
 DEPENDENCIES
   creek
+  fastsheet
   ooxl
   pry-byebug
   roo

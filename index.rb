@@ -49,8 +49,12 @@ def try_simple_spreadsheet
   end
 end
 
+def try_fastsheet
+  Fastsheet::Sheet.new(path_to_excel_file).rows
+end
+
 def available_gems
-  [:creek, :ooxl, :rubyxl, :roo, :simple_xlsx_reader, :simple_spreadsheet]
+  [:creek, :ooxl, :rubyxl, :roo, :simple_xlsx_reader, :simple_spreadsheet, :fastsheet]
 end
 
 Benchmark.bmbm available_gems.map(&:to_s).map(&:size).max do |bm|
